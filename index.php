@@ -53,23 +53,23 @@
         "50 мин", "4.6", "Заказ от 1000 грн"),
 
         new  Info("img/reporter/reporter.png",
-            "Reporter Restaurant",
+            "Reporter",
             "50 мин", "6.6", "Заказ от 1800 грн"),
 
         new  Info("img/coast/coast.jpg",
-            "Coast Restaurant",
+            "Coast",
             "60 мин", "7.3", "Заказ от 2500 грн"),
 
         new  Info("img/artist/artist.jpg",
-            "Артист Restaurant",
+            "Артист",
             "40 мин", "5.3", "Заказ от 1000 грн"),
 
         new  Info("img/papa/papa.jpg",
-            "Папа Карла",
+            "Папа-Карла",
             "50 мин", "6.3", "Заказ от 1500 грн"),
 
         new  Info("img/mama/mama.jpg",
-            "Мамою Клянусь",
+            "Мамою-Клянусь",
             "50 мин", "6.3", "Заказ от 1500 грн"),
 
         new  Info("img/pasiju/pa-si-ju.jpg",
@@ -77,47 +77,47 @@
             "50 мин", "4.6", "Заказ от 1000 грн"),
 
         new  Info("img/reporter/reporter.png",
-            "Reporter Restaurant_2",
+            "Reporter_2",
             "50 мин", "6.6", "Заказ от 1800 грн"),
 
         new  Info("img/coast/coast.jpg",
-            "Coast Restaurant_2",
+            "Coast_2",
             "60 мин", "7.3", "Заказ от 2500 грн"),
 
         new  Info("img/artist/artist.jpg",
-            "Артист Restaurant_2",
+            "Артист_2",
             "40 мин", "5.3", "Заказ от 1000 грн"),
 
         new  Info("img/papa/papa.jpg",
-            "Папа Карла_2",
+            "Папа-Карла_2",
             "50 мин", "6.3", "Заказ от 1500 грн"),
 
         new  Info("img/mama/mama.jpg",
-            "Мамою Клянусь_2",
+            "Мамою-Клянусь_2",
             "50 мин", "6.3", "Заказ от 1500 грн"),
 
         new  Info("img/pasiju/pa-si-ju.jpg",
-            "Pa-si-ju 3",
+            "Pa-si-ju_3",
             "50 мин", "4.6", "Заказ от 1000 грн"),
 
         new  Info("img/reporter/reporter.png",
-            "Reporter Restaurant_3",
+            "Reporter_3",
             "50 мин", "6.6", "Заказ от 1800 грн"),
 
         new  Info("img/coast/coast.jpg",
-            "Coast Restaurant_3",
+            "Coast_3",
             "60 мин", "7.3", "Заказ от 2500 грн"),
 
         new  Info("img/artist/artist.jpg",
-            "Артист Restaurant_3",
+            "Артист_3",
             "40 мин", "5.3", "Заказ от 1000 грн"),
 
         new  Info("img/papa/papa.jpg",
-            "Папа Карла_3",
+            "Папа-Карла_3",
             "50 мин", "6.3", "Заказ от 1500 грн"),
 
         new  Info("img/mama/mama.jpg",
-            "Мамою Клянусь_3",
+            "Мамою-Клянусь_3",
             "50 мин", "6.3", "Заказ от 1500 грн")
 
     ];

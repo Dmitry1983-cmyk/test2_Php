@@ -20,7 +20,7 @@ class RenderFull
         {
             $tmp =$tmp.$this->r_mini[$i]->Render();
         }
-        //return $tmp;
+
         return '<div class="cards">'.$tmp.'</div>';
     }
 }

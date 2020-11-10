@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1545305-5ca6-4007-9bc8-484bc7b09095" name="Default Changelist" comment="" />
+    <list default="true" id="f1545305-5ca6-4007-9bc8-484bc7b09095" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RenderFull.php" beforeDir="false" afterPath="$PROJECT_DIR$/RenderFull.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant.php" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restourant.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,13 +23,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1juwXBgy7UyGzB2sXGQnM0OXRMB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -45,7 +56,10 @@
       <updated>1604667321592</updated>
       <workItem from="1604667322606" duration="3693000" />
       <workItem from="1604680691464" duration="4071000" />
-      <workItem from="1604757348320" duration="12785000" />
+      <workItem from="1604757348320" duration="13180000" />
+      <workItem from="1604827277524" duration="3347000" />
+      <workItem from="1604904611792" duration="11662000" />
+      <workItem from="1604986764101" duration="12324000" />
     </task>
     <servers />
   </component>
@@ -53,21 +67,49 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="540" y="282" key="#CLI_Interpreters" timestamp="1604957426871">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="282" key="#CLI_Interpreters/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604957426871" />
     <state x="666" y="240" key="#PHP" timestamp="1604692094245">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="240" key="#PHP/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604692094245" />
     <state x="666" y="240" key="#PHP/0.0.1920.1040@0.0.1920.1040" timestamp="1604680722872" />
-    <state x="413" y="233" width="1092" height="768" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604692096410">
+    <state x="413" y="233" width="1092" height="768" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604924189610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="413" y="233" width="1092" height="768" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604692096410" />
+    <state x="413" y="233" width="1092" height="768" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604924189610" />
     <state x="413" y="233" width="1092" height="768" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604680724393" />
-    <state x="644" y="280" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604778514851">
+    <state x="644" y="280" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604782825526">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="644" y="280" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604778514851" />
+    <state x="644" y="280" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604782825526" />
     <state x="644" y="280" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604683584909" />
+    <state x="833" y="416" key="Github.ShareDialog" timestamp="1604782729443">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="833" y="416" key="Github.ShareDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604782729443" />
+    <state x="754" y="224" key="Github.UntrackedFilesDialog" timestamp="1604782751408">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="754" y="224" key="Github.UntrackedFilesDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604782751408" />
+    <state width="1292" height="218" key="GridCell.Tab.0.bottom" timestamp="1605011161761">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1292" height="218" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605011161761" />
+    <state width="1292" height="218" key="GridCell.Tab.0.center" timestamp="1605011161760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1292" height="218" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605011161760" />
+    <state width="1292" height="218" key="GridCell.Tab.0.left" timestamp="1605011161760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1292" height="218" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605011161760" />
+    <state width="1292" height="218" key="GridCell.Tab.0.right" timestamp="1605011161761">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1292" height="218" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605011161761" />
     <state x="0" y="481" key="NewPhpClassDialog" timestamp="1604682899527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -77,5 +119,17 @@
     </state>
     <state x="912" y="551" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604670211344" />
     <state x="912" y="551" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604682947498" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604782964610">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604782964610" />
+    <state x="859" y="396" width="682" height="248" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1604924282794">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="859" y="396" width="682" height="248" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604924282794" />
+    <state x="711" y="358" width="858" height="526" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1604925447635">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="711" y="358" width="858" height="526" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604925447635" />
   </component>
 </project>
