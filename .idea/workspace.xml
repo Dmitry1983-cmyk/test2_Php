@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1545305-5ca6-4007-9bc8-484bc7b09095" name="Default Changelist" comment="">
+    <list default="true" id="f1545305-5ca6-4007-9bc8-484bc7b09095" name="Default Changelist" comment="add menu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RenderFull.php" beforeDir="false" afterPath="$PROJECT_DIR$/RenderFull.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/Main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant.php" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restourant.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,12 +77,39 @@
       <workItem from="1604757348320" duration="13180000" />
       <workItem from="1604827277524" duration="3347000" />
       <workItem from="1604904611792" duration="11662000" />
-      <workItem from="1604986764101" duration="12324000" />
+      <workItem from="1604986764101" duration="15821000" />
+      <workItem from="1605073607744" duration="26273000" />
+      <workItem from="1605213375233" duration="1520000" />
+      <workItem from="1605249398095" duration="7471000" />
     </task>
+    <task id="LOCAL-00001" summary="add menu">
+      <created>1605015352468</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605015352468</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="add menu" />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="282" key="#CLI_Interpreters" timestamp="1604957426871">
@@ -94,22 +139,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="754" y="224" key="Github.UntrackedFilesDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604782751408" />
-    <state width="1292" height="218" key="GridCell.Tab.0.bottom" timestamp="1605011161761">
+    <state width="1292" height="297" key="GridCell.Tab.0.bottom" timestamp="1605214116131">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1292" height="218" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605011161761" />
-    <state width="1292" height="218" key="GridCell.Tab.0.center" timestamp="1605011161760">
+    <state width="1292" height="297" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605214116131" />
+    <state width="1292" height="297" key="GridCell.Tab.0.center" timestamp="1605214116131">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1292" height="218" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605011161760" />
-    <state width="1292" height="218" key="GridCell.Tab.0.left" timestamp="1605011161760">
+    <state width="1292" height="297" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605214116131" />
+    <state width="1292" height="297" key="GridCell.Tab.0.left" timestamp="1605214116131">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1292" height="218" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605011161760" />
-    <state width="1292" height="218" key="GridCell.Tab.0.right" timestamp="1605011161761">
+    <state width="1292" height="297" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605214116131" />
+    <state width="1292" height="297" key="GridCell.Tab.0.right" timestamp="1605214116131">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1292" height="218" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605011161761" />
+    <state width="1292" height="297" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605214116131" />
     <state x="0" y="481" key="NewPhpClassDialog" timestamp="1604682899527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -119,17 +164,25 @@
     </state>
     <state x="912" y="551" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604670211344" />
     <state x="912" y="551" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604682947498" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604782964610">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605016514505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604782964610" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605016514505" />
     <state x="859" y="396" width="682" height="248" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1604924282794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="859" y="396" width="682" height="248" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604924282794" />
-    <state x="711" y="358" width="858" height="526" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1604925447635">
+    <state x="858" y="406" width="316" height="248" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605252494336">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="711" y="358" width="858" height="526" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604925447635" />
+    <state x="858" y="406" width="316" height="248" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605252494336" />
+    <state x="711" y="358" width="858" height="526" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605252470223">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="711" y="358" width="858" height="526" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605252470223" />
+    <state x="616" y="235" key="run.anything.popup" timestamp="1605074198353">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="235" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605074198353" />
   </component>
 </project>

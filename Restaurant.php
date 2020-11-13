@@ -13,7 +13,7 @@
 
 <div class="container">
     <header class="header">
-        <a href="index.php?btn='.$_COOKIE['cookie'].'" class="logo wow animate__animated animate__rubberBand">
+        <a href="index.php" class="logo wow animate__animated animate__rubberBand">
             <img src="img/logo.svg" alt="Logo"></img>
         </a>
         <!-- поле поиска -->
@@ -126,7 +126,9 @@ class FullrenDesc
   public function ShowMenu($arr)
     {
         $link = mysqli_connect("localhost", "root","", "restaurant_database");
-        $sql = "select RestaurantName,Dish,Img,Cost from Restaurant left join Menu on Restaurant.Id=Menu.MenuId where RestaurantName = '".$arr->GetName()."'  ";
+
+        $sql = "select RestaurantName,Dish,Img,Cost from Restaurant left join Menu on Restaurant.Id=Menu.RestaurantId 
+                where RestaurantName = '".$arr->GetName()."'  ";
         $result = mysqli_query($link, $sql);
 
         $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -134,7 +136,7 @@ class FullrenDesc
         echo '<div class="section-heading">
                 <h2 class="section-title"> '.$arr->GetName().'  Menu : </h2>
                 <div class="card-info">
-                    <a href="index.php?btn='.$_COOKIE['cookie'].'" style="text-decoration: none"><h3>Вернуться</h3></a>
+                   <a href="index.php?btn='.$_COOKIE['cookie'].'" class="bck"><h3>Вернуться</h3></a> 
                 </div>
             </div>
 
@@ -289,7 +291,9 @@ ShowAd();
 <footer class="footer">
     <div class="container">
         <div class="footer-block">
-            <img src="img/logo.svg" alt="logotype" class="logo footer-log0"></img>
+            <a href="index.php" class="logo wow animate__animated animate__rubberBand">
+                <img src="img/logo.svg" alt="Logo"></img>
+            </a>
             <nav class="footer-nav">
                 <a href="#" class="footer-link">Ресторанам</a>
                 <a href="#" class="footer-link">Курьерам</a>
