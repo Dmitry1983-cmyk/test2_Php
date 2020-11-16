@@ -10,47 +10,79 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-    <header class="header">
-        <a href="index.php" class="logo wow animate__animated animate__rubberBand">
-            <img src="img/logo.svg" alt="Logo"></img>
-        </a>
-        <!-- поле поиска -->
-        <input type="text" class="input input-adress" placeholder="Адрес доставки" />
-        <div class="buttons">
-            <button class="button button-primary">
-                <img class="button-icon" src="img/user.svg" alt="user">
-                <span class="button-text">Войти</span>
-            </button>
-            <button class="button">
-                <img class="buttn-icon" src="img/shopping-cart.svg" alt="shopping cart">
-                <span class="button-text">Корзина</span>
-            </button>
-        </div>
-    </header>
-    <!-- /container -->
-</div>
-
-<main class="main">
-    <div class="container">
-        <section class="promo">
-            <h1 class="promo-title">Онлайн-сервис<br />доставки еды на дом</h1>
-            <p class="promo-text">Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком</p>
-        </section>
 
 
 
 <form method="post" action="index.php">
+    <div class="container">
+        <header class="header">
+            <a href="index.php" class="logo wow animate__animated animate__rubberBand">
+                <img src="img/logo.svg" alt="Logo"></img>
+            </a>
+            <!-- поле поиска -->
+            <input type="text" class="input input-adress" placeholder="Адрес доставки" />
+            <div class="buttons">
+                <!--------------------------Modal------------------------------------------>
+                <!--------------------------Modal------------------------------------------>
 
-    <section class="restaraunts">
+                <div class="main_div">
+                    <input type="checkbox" id="callback">
+                    <label class="lab_btn" for="callback">
+                        <img class="button-icon" src="img/user.svg" alt="user">Войти
+                    </label>
+
+                    <div action="" class="popup">
+                        <span>Введите данные</span>
+                        <input type="text" placeholder="Логин">
+                        <input type="text" placeholder="Пароль">
+                        <input id="submit" name="enter" type="submit" value="Войти">
+                        <input id="reg" name="register" type="submit" value="Регистрация">
+                        <label class="close_modal" for="callback">+</label>
+                    </div>
+                </div>
+
+                <!--------------------------Modal------------------------------------------>
+
+                <!--------------------------Modal------------------------------------------>
+
+                <button class="button">
+                    <img class="buttn-icon" src="img/shopping-cart.svg" alt="shopping cart">
+                    <span class="button-text">Корзина</span>
+                </button>
+
+            </div>
+        </header>
+        <!-- /container -->
+    </div>
+
+
+
+
+    <main class="main">
+        <div class="container">
+            <section class="promo">
+                <h1 class="promo-title">Онлайн-сервис<br />доставки еды на дом</h1>
+                <p class="promo-text">Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком</p>
+            </section>
+
+
+            <section class="restaraunts">
         <div class="section-heading">
             <h2 class="section-title">Рестораны</h2>
-            <input  type="submit" name="submit" class="sub" value="Поиск">
+            <input  type="submit" name="submit" style="width: 100px; height: 42px;border-radius: 2px;border: 1px solid #D9D9D9" class="sub" value="Поиск">
             <input type="search" name="search_text" class="input input-search" placeholder="Поиск блюд и ресторанов">
         </div>
 
     <?php
     include_once "Main.php";
+    
+
+
+    if(isset($_POST['register']))
+    {
+        header('Location: Regform.php');
+    }
+
     $arr_image_url=[
         new  Info("img/pasiju/pa-si-ju.jpg",
         "Pa-si-ju",
@@ -223,7 +255,11 @@
 
 
 
+
     ?>
+
+
+
 
 </form>
         </section>
@@ -252,6 +288,6 @@
 </footer>
 
 <script src="js/wow.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

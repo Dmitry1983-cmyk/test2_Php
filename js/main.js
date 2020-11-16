@@ -7,7 +7,8 @@ cartButton.addEventListener("click",toggleModal);
 close.addEventListener("click",toggleModal);
 
 function toggleModal(){
-    modal.classList.toggle("is-open"); 
+    modal.classList.toggle("is-open");
 }
 
-new WOW().init();
+ new WOW().init();
+

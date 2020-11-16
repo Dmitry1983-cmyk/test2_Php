@@ -20,10 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1545305-5ca6-4007-9bc8-484bc7b09095" name="Default Changelist" comment="add menu">
+      <change beforePath="$PROJECT_DIR$/.idea/DeliveryDnepr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DeliveryDnepr.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/Main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurant.php" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurant.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,11 +39,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1juwXBgy7UyGzB2sXGQnM0OXRMB" />
@@ -57,6 +66,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -80,7 +92,10 @@
       <workItem from="1604986764101" duration="15821000" />
       <workItem from="1605073607744" duration="26273000" />
       <workItem from="1605213375233" duration="1520000" />
-      <workItem from="1605249398095" duration="7471000" />
+      <workItem from="1605249398095" duration="24168000" />
+      <workItem from="1605351672702" duration="21377000" />
+      <workItem from="1605432296827" duration="20102000" />
+      <workItem from="1605507943468" duration="5556000" />
     </task>
     <task id="LOCAL-00001" summary="add menu">
       <created>1605015352468</created>
@@ -89,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605015352468</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add menu">
+      <created>1605258854120</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605258854120</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,10 +148,10 @@
     </state>
     <state x="413" y="233" width="1092" height="768" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604924189610" />
     <state x="413" y="233" width="1092" height="768" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604680724393" />
-    <state x="644" y="280" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604782825526">
+    <state x="644" y="280" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605389816735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="644" y="280" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604782825526" />
+    <state x="644" y="280" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605389816735" />
     <state x="644" y="280" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604683584909" />
     <state x="833" y="416" key="Github.ShareDialog" timestamp="1604782729443">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -139,47 +161,51 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="754" y="224" key="Github.UntrackedFilesDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604782751408" />
-    <state width="1292" height="297" key="GridCell.Tab.0.bottom" timestamp="1605214116131">
+    <state width="1292" height="297" key="GridCell.Tab.0.bottom" timestamp="1605513946531">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1292" height="297" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605214116131" />
-    <state width="1292" height="297" key="GridCell.Tab.0.center" timestamp="1605214116131">
+    <state width="1292" height="297" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605513946531" />
+    <state width="1292" height="297" key="GridCell.Tab.0.center" timestamp="1605513946531">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1292" height="297" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605214116131" />
-    <state width="1292" height="297" key="GridCell.Tab.0.left" timestamp="1605214116131">
+    <state width="1292" height="297" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605513946531" />
+    <state width="1292" height="297" key="GridCell.Tab.0.left" timestamp="1605513946531">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1292" height="297" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605214116131" />
-    <state width="1292" height="297" key="GridCell.Tab.0.right" timestamp="1605214116131">
+    <state width="1292" height="297" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605513946531" />
+    <state width="1292" height="297" key="GridCell.Tab.0.right" timestamp="1605513946531">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1292" height="297" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605214116131" />
+    <state width="1292" height="297" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605513946531" />
     <state x="0" y="481" key="NewPhpClassDialog" timestamp="1604682899527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="481" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604682899527" />
-    <state x="912" y="551" key="NewPhpFileDialog" timestamp="1604682947498">
+    <state x="912" y="551" key="NewPhpFileDialog" timestamp="1605265874183">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="912" y="551" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604670211344" />
+    <state x="912" y="551" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605265874183" />
     <state x="912" y="551" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604682947498" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605016514505">
+    <state x="314" y="288" key="SettingsEditor" timestamp="1605264316736">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605016514505" />
+    <state x="314" y="288" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605264316736" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605514153419">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605514153419" />
     <state x="859" y="396" width="682" height="248" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1604924282794">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="859" y="396" width="682" height="248" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1604924282794" />
-    <state x="858" y="406" width="316" height="248" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605252494336">
+    <state x="858" y="406" width="316" height="248" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605466378481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="858" y="406" width="316" height="248" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605252494336" />
-    <state x="711" y="358" width="858" height="526" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605252470223">
+    <state x="858" y="406" width="316" height="248" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605466378481" />
+    <state x="711" y="358" width="858" height="526" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605454227972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="711" y="358" width="858" height="526" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605252470223" />
+    <state x="711" y="358" width="858" height="526" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/1920.0.1920.1080/3840.0.1024.768@0.0.1920.1040" timestamp="1605454227972" />
     <state x="616" y="235" key="run.anything.popup" timestamp="1605074198353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
