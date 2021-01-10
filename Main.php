@@ -22,7 +22,7 @@ class Main
     public function generatePage($page_num)
     {
         setcookie("cookie",($page_num+1));
-        return $this->render_full[$page_num]->Render().'<div class="btn-div-class" style="">'.$this->addPagin().'</div>';
+        return $this->render_full[$page_num]->Render().'<div style="margin-top: 30px; display:flex;justify-content: center;">'.$this->addPagin().'</div>';
     }
 
     public function addPagin()

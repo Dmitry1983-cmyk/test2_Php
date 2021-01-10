@@ -1,9 +1,12 @@
+<?php
+session_start();
+?>
 <!Doctype html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Delivery Food -доставка еды на дом</title>
+    <title>Delivery Food Dnepr -доставка еды на дом</title>
     <link rel="stylesheet" href="http://fonts.google.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -11,9 +14,6 @@
 </head>
 <body>
 
-
-
-<form method="post" action="index.php">
     <div class="container">
         <header class="header">
             <a href="index.php" class="logo wow animate__animated animate__rubberBand">
@@ -21,42 +21,109 @@
             </a>
             <!-- поле поиска -->
             <input type="text" class="input input-adress" placeholder="Адрес доставки" />
+            <?php
+            if(isset($_SESSION["session_username"]))
+            {
+                echo '<p>Здравствуй ' .$_SESSION['session_username'].'</p>';
+            echo '<p><a class="acc-out-a" href="logout.php">Выйти</a></p>';
+            }else{
+               echo '<span class="user_name">Здравствуй Пользователь</span>';
+            }
+            ?>
+            <!----------------------------------------------------------------->
+            <!----------------------------------------------------------------->
             <div class="buttons">
                 <!--------------------------Modal------------------------------------------>
                 <!--------------------------Modal------------------------------------------>
-
+ <form method="post" action="index.php">
                 <div class="main_div">
                     <input type="checkbox" id="callback">
-                    <label class="lab_btn" for="callback">
+                    <?php
+                    if(isset($_SESSION["session_username"]))
+                    {
+                        echo '
+                        <label id="lab_btn" for="callback" style="display: none">
                         <img class="button-icon" src="img/user.svg" alt="user">Войти
-                    </label>
+                    </label>';
+                    }else{
+                        echo '
+                        <label id="lab_btn" for="callback">
+                        <img class="button-icon" src="img/user.svg" alt="user">Войти
+                    </label>';
+                    }
+                    ?>
 
                     <div action="" class="popup">
                         <span>Введите данные</span>
-                        <input type="text" placeholder="Логин">
-                        <input type="text" placeholder="Пароль">
-                        <input id="submit" name="enter" type="submit" value="Войти">
-                        <input id="reg" name="register" type="submit" value="Регистрация">
+                        <input type="text" name="login" placeholder="Логин">
+                        <input type="password" name="psw" placeholder="Пароль">
+                        <input class="submit" name="enter" type="submit" value="Войти">
+                        <input class="reg" name="register" type="submit" value="Регистрация">
                         <label class="close_modal" for="callback">+</label>
                     </div>
                 </div>
+</form>
+<?php
+include_once 'Bucket.php';
+$con = mysqli_connect("localhost", "root", "", "DeliveryFoodDnepr")  or die("Ошибка " . mysqli_error($con));
 
+if(isset($_POST['register']))
+{
+    header('Location: register.php');
+}
+if(isset($_POST['enter']))
+{
+    if(!empty($_POST['login']) && !empty($_POST['psw']))
+    {
+        $login=htmlspecialchars($_POST['login']);
+        $password=htmlspecialchars($_POST['psw']);
+        $query =mysqli_query($con,"select * from DataUser left join LogPasUser on DataUser.PassIdUser = LogPasUser.Id
+                                        WHERE UserNickname='".$login."' AND HeshPas='".$password."'");
+        $numrows=mysqli_num_rows($query);
+        if($numrows!=0)
+        {
+            while($row=mysqli_fetch_assoc($query))
+            {
+                $dbusername=$row['UserNickname'];
+                $dbpassword=$row['HeshPas'];
+            }
+            if($login == $dbusername && $password == $dbpassword)
+            {
+                $_SESSION['session_username']=$login;
+                header("Location: intropage.php");
+            }
+        } else {
+
+            echo  "Invalid username or password!";
+        }
+
+    }
+}
+?>
                 <!--------------------------Modal------------------------------------------>
 
                 <!--------------------------Modal------------------------------------------>
-
-                <button class="button">
-                    <img class="buttn-icon" src="img/shopping-cart.svg" alt="shopping cart">
-                    <span class="button-text">Корзина</span>
-                </button>
+                <?php
+                if(isset($_SESSION["session_username"]))
+                {
+                    echo '
+            <button class="button" id="cart-button">
+                <img class="buttn-icon" src="img/shopping-cart.svg" alt="shopping cart">
+                <span class="button-text">Корзина</span>
+            </button>';
+                }else{
+                    echo '
+            <button class="button" id="cart-button" style="display: none">
+                <img class="buttn-icon" src="img/shopping-cart.svg" alt="shopping cart">
+                <span class="button-text">Корзина</span>
+            </button>';
+                }
+                ?>
 
             </div>
         </header>
         <!-- /container -->
     </div>
-
-
-
 
     <main class="main">
         <div class="container">
@@ -67,210 +134,43 @@
 
 
             <section class="restaraunts">
-        <div class="section-heading">
-            <h2 class="section-title">Рестораны</h2>
-            <input  type="submit" name="submit" style="width: 100px; height: 42px;border-radius: 2px;border: 1px solid #D9D9D9" class="sub" value="Поиск">
-            <input type="search" name="search_text" class="input input-search" placeholder="Поиск блюд и ресторанов">
-        </div>
 
-    <?php
-    include_once "Main.php";
-    
-
-
-    if(isset($_POST['register']))
-    {
-        header('Location: Regform.php');
-    }
-
-    $arr_image_url=[
-        new  Info("img/pasiju/pa-si-ju.jpg",
-        "Pa-si-ju",
-        "50 мин", "4.6", "Заказ от 1000 грн"),
-
-        new  Info("img/reporter/reporter.png",
-            "Reporter",
-            "50 мин", "6.6", "Заказ от 1800 грн"),
-
-        new  Info("img/coast/coast.jpg",
-            "Coast",
-            "60 мин", "7.3", "Заказ от 2500 грн"),
-
-        new  Info("img/artist/artist.jpg",
-            "Артист",
-            "40 мин", "5.3", "Заказ от 1000 грн"),
-
-        new  Info("img/papa/papa.jpg",
-            "Папа-Карла",
-            "50 мин", "6.3", "Заказ от 1500 грн"),
-
-        new  Info("img/mama/mama.jpg",
-            "Мамою-Клянусь",
-            "50 мин", "6.3", "Заказ от 1500 грн"),
-
-        new  Info("img/pasiju/pa-si-ju.jpg",
-            "Pa-si-ju_2",
-            "50 мин", "4.6", "Заказ от 1000 грн"),
-
-        new  Info("img/reporter/reporter.png",
-            "Reporter_2",
-            "50 мин", "6.6", "Заказ от 1800 грн"),
-
-        new  Info("img/coast/coast.jpg",
-            "Coast_2",
-            "60 мин", "7.3", "Заказ от 2500 грн"),
-
-        new  Info("img/artist/artist.jpg",
-            "Артист_2",
-            "40 мин", "5.3", "Заказ от 1000 грн"),
-
-        new  Info("img/papa/papa.jpg",
-            "Папа-Карла_2",
-            "50 мин", "6.3", "Заказ от 1500 грн"),
-
-        new  Info("img/mama/mama.jpg",
-            "Мамою-Клянусь_2",
-            "50 мин", "6.3", "Заказ от 1500 грн"),
-
-        new  Info("img/pasiju/pa-si-ju.jpg",
-            "Pa-si-ju_3",
-            "50 мин", "4.6", "Заказ от 1000 грн"),
-
-        new  Info("img/reporter/reporter.png",
-            "Reporter_3",
-            "50 мин", "6.6", "Заказ от 1800 грн"),
-
-        new  Info("img/coast/coast.jpg",
-            "Coast_3",
-            "60 мин", "7.3", "Заказ от 2500 грн"),
-
-        new  Info("img/artist/artist.jpg",
-            "Артист_3",
-            "40 мин", "5.3", "Заказ от 1000 грн"),
-
-        new  Info("img/papa/papa.jpg",
-            "Папа-Карла_3",
-            "50 мин", "6.3", "Заказ от 1500 грн"),
-
-        new  Info("img/mama/mama.jpg",
-            "Мамою-Клянусь_3",
-            "50 мин", "6.3", "Заказ от 1500 грн")
-
-    ];
-
-    $ar=new Main($arr_image_url);
-
-
-    if(isset($_POST['btn']))
-    {
-        echo $ar->generatePage($_POST['btn']-1);
-    }
-    else
-    {
-        echo $ar->generatePage(0);
-    }
-
-
-     //-----------worked-------------------------
-
-    if (!mysqli_connect("localhost", "root", "", "restaurant_database")) {
-        exit('Cannot connect to server');
-    }
-
-    if(isset($_POST['search_text']))
-    {
-        $query=$_POST['search_text'];
-        $link = mysqli_connect("localhost", "root","", "restaurant_database");
-        $sql = "select RestaurantName,Dish,Img,Cost from Restaurant left join Menu on Restaurant.Id=Menu.RestaurantId 
-                where RestaurantName like '%$query%' or Dish like '%$query%'  ";
-        $result = mysqli_query($link, $sql);
-
-        $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
-        $tmp_cost="";
-        $tmp_rest="";
-        $tmp_img="";
-        $tmp_dish="";
-
-        foreach ($rows as $row)
-        {
-            if($row['RestaurantName']==$query || $row['Dish']==$query)
-            //if($row['RestaurantName']==$query)
-            {
-                $tmp_cost=$row['Cost'];
-                $tmp_rest=$row['RestaurantName'];
-                $tmp_img=$row['Img'];
-                $tmp_dish=$row['Dish'];
-                echo '
-                        <!-- /.cards -->
-                
-                <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-                <img src="'. $tmp_img .'" alt="image" class="card-omage" />
-                    <div class="card-text">
-                        <div class="card-heading">
-                            <h3 class="card-title card-title-reg">'. $tmp_dish .' Можно упить в ресторане  '.$tmp_rest.'</h3>
-                        </div>
-                        
-                        <!-- /.card-heading -->
-                        
-                        <div class="card-info">
-                            <div class="ingridients">Цена : '. $tmp_cost .' грн.</div>
-                        </div>
-                        
-                        <!-- /.card-info -->
-                        
-                        <div class="card-buttons">
-                        </div>
-                    </div>
+                <form method="post">
+                <div class="section-heading">
+                    <input  type="submit" name="submit" style="width: 100px; height: 42px;border-radius: 2px;border: 1px solid #D9D9D9" class="sub" value="Поиск">
+                    <input type="search" name="search_text" class="input input-search" placeholder="Поиск блюд и ресторанов">
                 </div>
-                
-            <!-- /.cards -->
-            
-            <!--
-            <a href="Restaurant.php?id=.$tmp_rest." class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-                    <img src=".$this->info->GetArr()." alt="image" class="card-omage" />
-                    <div class="card-text">
-                        <div class="card-heading">
-                            <h3 class="card-title">.$tmp_rest.</h3>
-                            <span class="card-tag tag">.$this->info->GetDuration().</span>
-                        </div>
-                        <div class="card-info">
-                            <div class="rating">
-                                <img src="img/star.svg" alt="rating">
-                                .$this->info->GetRating().</div>
-                            <div class="price">.$this->info->GetOrder().</div>
-                            <div class="category"></div>
-                        </div>
-                    </div>
-                </a>
-                -->
-                <!-- /.card -->
-            ';
-            }
-        }
+                </form>
 
-    }
+                <div class="cards">
 
-    //----------------------------------------
+                    <?php
+                    include_once 'RestaurantController.php';
+                    include_once 'RestaurantView.php';
 
-
-
-
-
-    ?>
-
-
-
-
-</form>
-        </section>
-    </div>
+                    if(empty($_POST['search_text']))
+                    {
+                    $res=new RestaurantController();
+                    $data=new RestaurantView($res);
+                    $data->getRestaurant();
+                    }
+                    else
+                    {
+                        $res=new RestaurantController();
+                        $data=new RestaurantView($res);
+                        $data->searchDishRestaurant();
+                    }
+                    ?>
+                </div>
+</section>
+</div>
 </main>
 
 <footer class="footer">
     <div class="container">
         <div class="footer-block">
             <a href="index.php" class="logo wow animate__animated animate__rubberBand">
-            <img src="img/logo.svg" alt="logotype" class="logo footer-log0"></img>
+                <img src="img/logo.svg" alt="logotype" class="logo footer-log0"></img>
             </a>
             <nav class="footer-nav">
                 <a href="restourant.html" class="footer-link">Ресторанам</a>
@@ -287,7 +187,30 @@
     <!-- /.container -->
 </footer>
 
+<!------------------------------------------------------->
+<!-- modal -->
+<div class="modal">
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <h3 class="modal-title">Корзина</h3>
+            <buton class="close">&times;</buton>
+        </div>
+        <!-- /.modal-header -->
+        <div class="modal-body">
+            <?php getBasketUser(); ?>
+        </div>
+
+        <!-- /.modal-body -->
+        <div class="modal-footer">
+            <?php totalSum();?>
+        </div>
+        <!-- /.modal-footer -->
+    </div>
+</div>
+<!------------------------------------------------------->
+
 <script src="js/wow.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

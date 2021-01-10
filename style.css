@@ -58,8 +58,13 @@ body{
 }
 
 .button-primary{
-    background: #1890FF;
-    border: 1px solid #1890FF;
+    /*background: #1890FF;*/
+    /*border: 1px solid #1890FF;*/
+    border: solid 1px #da7c0c;
+    background: #f78d1d;
+    background: -moz-linear-gradient(top,  #faa51a, #f47a20);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+
     color:#FFFFFF;
     margin-right: 10px;
 }
@@ -114,6 +119,7 @@ body{
 
 .main{
     background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+
 }
 
 .cards{
@@ -157,6 +163,7 @@ body{
     font-weight: bold;
     font-size: 24px;
     line-height: 32px;
+    color: #353535;
 }
 
 .card-title-reg{
@@ -249,8 +256,8 @@ body{
 }
 
 .footer-nav{
-    margin-left: 35px;
-    margin-right: auto;
+    /*margin-left: 35px;*/
+    /*margin-right: auto;*/
 }
 
 .footer-link{
@@ -505,13 +512,25 @@ body{
 
     } */
 }
+@media(max-width:700px){
+    .main{
+        width: 110%;
+    }
+    .footer{
+        margin: 0 10%;
+    }
+    .footer-block{
+        width: 81%;
+    }
 
+}
 @media(max-width:575px){
     body{
-        margin-left: 25%;
+        margin-left: 26%;
     }
     .main{
-        width: 121.5%;
+        width: 126.5%;
+        margin-left: 5%;
     }
     .btn-div-class{
         width: 70%;
@@ -521,7 +540,7 @@ body{
         width: 70%;
     }
     .promo{
-        width: 70%;
+        width: 57%;
         padding: 50px;
         background-size: 250px;
         background-position: top -100px right -50px;
@@ -532,6 +551,7 @@ body{
 
     .header{
         flex-wrap: wrap;
+        margin-left: 12%;
     }
 
     .input-adress{
@@ -547,6 +567,7 @@ body{
     .section-heading{
         display: flex;
         justify-content: start;
+        width: 70%;
     }
 
     .card{
@@ -561,6 +582,7 @@ body{
 
     .footer-block{
         width: 70%;
+        margin-left: 11%;
         align-items:flex-start;
         justify-content: space-between;
     }
@@ -585,12 +607,14 @@ body{
         margin-left: 25%;
     }
     .main{
-        width: 146.5%;
+        width: 150%;
+        margin-left: 25%;
     }
     .btn-div-class{
         width: 70%;
     }
     .footer{
+        margin:auto ;
         width: 146%;
     }
 
@@ -602,16 +626,16 @@ body{
         margin-left: -30%;
     }
     .section-heading{
-        flex-wrap: wrap;
+        /*flex-wrap: wrap;*/
     }
     .footer-block{
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items:center;
+        display: flex;
+        justify-content: space-between;
+        /*flex-wrap: wrap;*/
+        /*flex-direction: column;*/
+        /*align-items:center;*/
     }
-    .footer-nav{
-        margin-left: 38%;
-    }
+
     .footer-log0{
         order: 0;
         margin-bottom: 20px;
@@ -622,7 +646,7 @@ body{
     }
 }
 
-@media(max-width:480px) {
+/*@media(max-width:480px) {
 
     body {
         margin-left: 25%;
@@ -639,7 +663,7 @@ body{
     .footer {
         width: 146%;
     }
-}
+}*/
 
 /*-------------------button----------------*/
 .btn {
@@ -675,22 +699,53 @@ body{
     transition: .5s ease-in-out;
 }
 
+<!------------------------------->
+
 <!--------------MODAL----------------------->
-.main_div{
+    .main_div{
         max-width: 1000px;
         margin: 40px auto;
         text-align: center;
         position: relative;
+    }
+#contact{
+    display: block;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    border: 1px solid darkcyan;
+    border-radius: 50px;
+    background-color: #3ec45e;
 }
-.lab_btn{
+.go_to{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 120px;
+    height: 30px;
+    background: #f78d1d;
+    border-radius: 4px;
+    display: flex;
+    align-items: center
+}
+.go_to a{
+    margin: auto;
+    margin-left: 5%;
+    color: white;
+    text-decoration: none;
+}
+#lab_btn{
     display: block;
     margin: 0 auto;
     width: 80px;
-    border: 2px solid darkcyan;
-    border-radius: 2px;
-    background-color: #3ec45e;
+
+    border: solid 1px #da7c0c;
+    background: #f78d1d;
+    background: -moz-linear-gradient(top,  #faa51a, #f47a20);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+    color: #fff;
+
     padding: 10px 30px;
-    color: darkcyan;
     text-transform: uppercase;
     font-family: arial;
     cursor: pointer;
@@ -698,14 +753,15 @@ body{
 }
 
 .lab_btn:hover{
-    background-color: darkcyan;
-    color: white;
+    /*background-color: darkcyan;*/
+    /*color: white;*/
 }
 
 .popup{
     display: block;
     width: 260px;
-    background-color: darkcyan;
+    /*background-color: #08a93b;*/
+    background-color: rgba(8,169,59,0.7);
     padding: 30px;
     text-transform: uppercase;
     font-family: arial;
@@ -730,17 +786,41 @@ body{
     outline: none;
 }
 
-#submit{
-    background-color: #1cbfd9;
+.acc-out-a{
+    text-decoration: none;
+}
+
+.submit,.sub{
+    border: solid 1px #da7c0c;
+    background: #f78d1d;
+    background: -moz-linear-gradient(top,  #faa51a, #f47a20);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+    color: #fff;
+
     cursor: pointer;
 }
-#reg{
-    background-color: #1fe587;
+.reg{
+    /*background-color: #1fe587;*/
+    border: solid 1px #da7c0c;
+    background: #f78d1d;
+    background: -moz-linear-gradient(top, #fa4e1a, #f47a20);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+    color: #FFFFFF;
+
     cursor: pointer;
 }
 
 #callback{
     display: none;
+}
+#check_contact{
+    display: none;
+}
+.logout{
+    display: none;
+}
+#check_contact:checked ~ .logout{
+    display: block;
 }
 
 #callback:checked ~ .popup{
